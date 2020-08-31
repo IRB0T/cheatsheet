@@ -1,5 +1,4 @@
-#Nmap
-Cheatsheet FOR Nmap
+#Cheatsheet FOR Nmap
 		
 | S.No | Title            | Command Syntax   |
 |:-----:|:----------------|:--------------------|
