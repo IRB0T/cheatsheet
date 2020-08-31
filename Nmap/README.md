@@ -1,4 +1,4 @@
-Cheatsheet For Nmap-H1
+Cheatsheet For Nmap
 ======
 		
 | S.No | Title            | Command Syntax   |
