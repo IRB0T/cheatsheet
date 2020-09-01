@@ -1,6 +1,20 @@
 Nmap Cheatsheet
 ======
-		
+
+Nmap Useful commands for Interview.
+======		
+| S.No | Title            | Command Syntax   | What it will do
+|:-----:|:----------------|:--------------------|:--------------------|
+|1 |    SYN Scan, Half-open    | nmap -sS 192.168.0.1       | TCP 3 way handshake is not completed, Root Privileges require  |
+|2 |    TCP Scan, Full Scan    | nmap -sT 192.168.0.1       | TCP 3 way handshake is completed |
+|3 |    Xmas Scan              | nmap -sX 192.168.0.1       | Send Packet with FIN,PSH,URG flag set|
+|4 |    idle Scan              | nmap -sI ZombieIP TargetIP | Take advantages of incrementing IP identification | 
+|5 |    Ping Scan              | nmap -sn 192.168.0.1       | It will do Host Discovery Only. will Skip PORT scan |
+|6 |    Do Not Ping            | nmap -Pn 192.168.0.1       | It will skip Host Discovery Only.|
+|7 |    No DNS resolution      | nmap -n 192.168.0.1        | Tells Nmap to never do reverse DNS resolution on the active IP addresses it finds | 
+ 
+Nmap common commands
+======		
 | S.No | Title            | Command Syntax   |
 |:-----:|:----------------|:--------------------|
 |1 |    Scan single IP              | nmap 192.168.0.1     |
