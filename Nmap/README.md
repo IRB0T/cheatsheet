@@ -1,7 +1,7 @@
 Nmap Cheatsheet
 ======
 
-Nmap Useful commands for Interview.
+Nmap Useful commands.
 ======		
 | S.No | Title            | Command Syntax   | What it will do
 |:-----:|:----------------|:--------------------|:--------------------|
@@ -13,7 +13,18 @@ Nmap Useful commands for Interview.
 |6 |    Do Not Ping            | nmap -Pn 192.168.0.1       | It will skip Host Discovery Only.|
 |7 |    No DNS resolution      | nmap -n 192.168.0.1        | Tells Nmap to never do reverse DNS resolution on the active IP addresses it finds | 
  
-Nmap common commands
+Nmap Port State.
+======		
+| S.No | State            | reason   | To remember
+|:-----:|:----------------|:------------------------------------------------------------|:--------------------|
+|1 |    open            | An application is actively accepting TCP connections, UDP datagrams or SCTP associations on this port| Port is OPEN  |
+|2 |    closed          | A closed port is accessible (it receives and responds to Nmap probe packets), but there is no application listening on it  | Port is Closed   |
+|3 |    filtered        | Nmap cannot determine whether the port is open because packet filtering prevents its probes from reaching the port | ICMP error messages such as type 3 code 13 (destination unreachable: communication administratively prohibited)  |
+|4 |    unfiltered      | The unfiltered state means that a port is accessible, but Nmap is unable to determine whether it is open or closed | Only ACK scan determine this   |
+|5 |    open|filtered   | Nmap places ports in this state when it is unable to determine whether a port is open or filtered. This occurs for scan types in which open ports give no response|  UDP, IP protocol, FIN, NULL, and Xmas scans    |
+|6 |    closed|filtered |  This state is used when Nmap is unable to determine whether a port is closed or filtered. |idle scan |
+ 
+Nmap Basic commands
 ======		
 | S.No | Title            | Command Syntax   |
 |:-----:|:----------------|:--------------------|
