@@ -51,6 +51,6 @@ Nmap Basic commands
 
 
 
-
+Interview question “ Does SYN Scan requires root privileges to perform it” Answer is “ Yes. we need root privileges to perform SYN SCAN”
 
 Reference : https://nmap.org/
