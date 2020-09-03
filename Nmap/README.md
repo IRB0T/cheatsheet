@@ -47,9 +47,7 @@ Nmap Basic commands
 |16|	Save output to file	        |nmap -oN output.txt 192.168.0.1	|
 |17|	Save Output as XML	        |nmap -oX output.xml 192.168.0.1	|
 |18|	Save Output in all formats	|nmap -oA allformats 192.168.0.1	|
-|19|	Scan using default scripts	|nmap -sV -sC 192.168.0.1|	
-
-
+|19|	Scan using default scripts	|nmap -sV -sC 192.168.0.1|
 
 Interview question “ Does SYN Scan requires root privileges to perform it” Answer is “ Yes. we need root privileges to perform SYN SCAN”
 
